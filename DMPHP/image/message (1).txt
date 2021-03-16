@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>
+		Commande 
+	</title>
+</head>
+<body>
+<h1 align="center"> 
+	Nous vous remercions de votre confiance, veuillez remplir ce formuaire afin de compléter votre location: 
+	</h1>
+
+	<form method="post" action="recaploc.php">
+		Veuillez indiquez votre civilité
+		<br>
+		<input type="radio" name="cciv" id="Madame" checked value="Madame"/>
+		<label for"Madame"> Mme </label>
+		<br>
+		<input type="radio" name="cciv" id="Mademoiselle" value="Mademoiselle"/>
+		<label for "Mademoiselle"> Mlle </label>
+		<br>
+		<input type="radio" name="cciv" id="Monsieur" value="Monsieur"/>
+		<label for"Monsieur"> Mr </label>
+		<br><br>
+		<label for "nom"> Tapez votre nom :</label>
+		<input type="texte" name="cnom" id="nom" placeholder="Dupont" size="30"/>
+		<label for "prenom"> Tapez votre prénom :</label>
+		<input type="texte" name="cprenom" id="prenom" placeholder="Jean" size="30"/>
+
+		<label for "ctelephone"> Indiquez votre numéro de téléphone :</label>
+		<input type="tel" name="ctelephone" id="telephone"/>
+		<br><br>
+			<label for "mail"> Tapez votre E-mail :</label>
+			<input type="email" name="cmail" id="mail" required/>
+			<br><br>
+			<label for "adresse"> Tapez votre adresse :</label>
+			<input type="texte" name="cadresse" id="adresse" required />
+			<label for "code postal"> Tapez votre code postal :</label>
+			<input type="number" name="ccp" id="code postal" required />
+			<label for "ville">Votre ville :</label>
+			<input type="texte" name="cville" id="ville" required/>
+		<br><br>
+		<label for "dat"> Choisissez votre date de retour: </label>
+		<input type="date" name="cdate" id="dat"/>
+		<br><br>
+		<label for "Formation"> Veuillez indiquez votre usage souhaitée </label>
+		<br>
+		<select id="discipline" name="cdiscipline">
+			<optgroup label="Compétition">
+				<option value="Beauté" selected>
+					Beauté
+				</option>
+				
+				<option value="Course">
+				Course	
+				</option>
+			</optgroup>
+			<optgroup label="Personnel">
+				<option value="Entrainement">
+					Entrainement
+				</option>
+				<option value="Particulier">
+					Particulier : usage personel
+				</option>				
+			</optgroup>	
+		</select>
+
+	</p>
+	<br><br>
+	<input type="submit" value="Envoyez le formulaire" onClick="alert('Merci pour votre location!')"/>
+	</form>
+</body>
+</html>
